@@ -3,13 +3,19 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <IncludePath>C:\Program Files %28x86%29\opencv\build\include\opencv2;C:\Program Files %28x86%29\opencv\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files %28x86%29\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
+    <!-- 包含目录 -->
+    <IncludePath>C:\opencv\opencv\build\include;C:\opencv\opencv\build\include\opencv2;$(IncludePath)</IncludePath>
+    <!-- 库目录 -->
+    <LibraryPath>C:\opencv\opencv\build\x64\vc15\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opencv\opencv\build\include;C:\opencv\opencv\build\include\opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <Link>
+      <AdditionalLibraryDirectories>C:\opencv\opencv\build\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opencv_world440d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup />
+  <PropertyGroup />
 </Project>
