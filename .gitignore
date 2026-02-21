@@ -1,0 +1,23 @@
+# 忽略大文件
+ThirdParty/*.rar
+ThirdParty/*.zip
+
+# 忽略编译生成文件
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.idb
+*.obj
+*.tlog
+*.enc
+
+# 忽略 VS 临时文件
+.vs/
+Debug/
+Release/
+x64/Debug/
+x64/Release/
+
+# 忽略生成的数据文件夹
+Codes/*/x64/Debug/txt/
