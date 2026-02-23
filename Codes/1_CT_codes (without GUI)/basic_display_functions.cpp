@@ -161,8 +161,9 @@ void write_and_show_Img(Mat image, string image_name, string type_name)
 	//imwrite("./pics/" + image_name + "_output_" + type_name + "_log.png", Img_display5);
 
 	Mat Img_display = Convert_to_show_normalize(image);
-	imwrite("./pics/" + image_name + "_output_" + type_name + ".png", Img_display);
-
+	//imwrite("./pics/" + image_name + "_output_" + type_name + ".png", Img_display);
+  imwrite(
+      "./pics/" + image_name + ".png", Img_display);
 	/*Mat Img_display_log = Convert_to_show_LogTrans(Img_display);
 	Img_display_log = Convert_to_show_normalize(Img_display_log);
 	imwrite("./pics/" + image_name + "_output_" + type_name + "_log.png", Img_display_log);*/

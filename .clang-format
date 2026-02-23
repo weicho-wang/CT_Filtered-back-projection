@@ -1,0 +1,74 @@
+# Ultra-conservative config - only safe formatting
+
+BasedOnStyle: Google
+
+# Only safe indentation settings
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+ContinuationIndentWidth: 4
+
+# Line width only
+ColumnLimit: 80
+
+# ============================================
+# DISABLE everything else - use default/leave unchanged
+# ============================================
+
+# Includes - leave as-is
+SortIncludes: false
+
+# Comments - do not touch at all
+ReflowComments: false
+AlignTrailingComments: false
+SpacesBeforeTrailingComments: 2
+
+# Line endings - preserve original
+DeriveLineEnding: true
+UseCRLF: false
+
+# Functions - only empty functions allowed on one line
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortBlocksOnASingleLine: false
+AllowShortLambdasOnASingleLine: false
+AllowShortEnumsOnASingleLine: false
+
+# Alignment - minimal
+PointerAlignment: Left
+DerivePointerAlignment: false
+
+# Braces
+BreakBeforeBraces: Attach
+
+# Namespaces
+NamespaceIndentation: None
+FixNamespaceComments: false
+CompactNamespaces: false
+
+# Constructor initializers
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+ConstructorInitializerIndentWidth: 4
+BreakConstructorInitializers: BeforeColon
+
+# Disable all other alignment
+AlignAfterOpenBracket: false
+AlignOperands: false
+AlignConsecutiveMacros: false
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignConsecutiveBitFields: false
+AlignEscapedNewlines: false
+
+# Packing
+BinPackArguments: true
+BinPackParameters: true
+
+# Empty lines
+KeepEmptyLinesAtTheStartOfBlocks: true
+MaxEmptyLinesToKeep: 1
+
+# Disable experimental
+ExperimentalAutoDetectBinPacking: false
