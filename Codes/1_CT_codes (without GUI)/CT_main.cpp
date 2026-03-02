@@ -9,6 +9,7 @@
 using namespace std;
 using namespace cv;
 
+// ToDo: add a function that read a xml config file to initial parameters
 int main() {
   //int radon_flag = radonFlags::analytical;  // for shepplogan
   int radon_flag = radonFlags::integral;  // integral:for existing image
@@ -106,9 +107,6 @@ int main() {
       write_and_show_Img(radon_Img, image_name, "radon_fanbeam");
     }
   }
-
-  //
-  //waitKey(0);
 
   return 0;
 }

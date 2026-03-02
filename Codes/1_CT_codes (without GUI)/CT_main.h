@@ -23,4 +23,4 @@ enum radonTypes {
 #include "shepplogan.h"
 
 
-#endif // !CT_MAIN_H_INCLUDED#pragma once
+#endif
