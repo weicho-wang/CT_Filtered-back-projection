@@ -2,7 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Codes",
-    "\\Codes\\1_CT_codes (without GUI)"
+    "\\Codes\\1_CT_codes (without GUI)",
+    "\\Codes\\1_CT_codes (without GUI)\\x64"
   ],
+  "SelectedNode": "\\Codes\\1_CT_codes (without GUI)\\CMakeList.txt",
   "PreviewInSolutionExplorer": false
 }
